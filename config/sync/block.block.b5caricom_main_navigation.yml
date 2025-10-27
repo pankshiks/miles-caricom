@@ -1,0 +1,27 @@
+uuid: 13d65050-0674-4aa5-82fa-c43794c57309
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - b5caricom
+_core:
+  default_config_hash: 2bL4_NUVirmhp6oJRIv3FCuubQTjNu5jBAQJCRHu5ww
+id: b5caricom_main_navigation
+theme: b5caricom
+region: header_right
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

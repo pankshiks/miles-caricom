@@ -1,0 +1,21 @@
+{#
+  Single Announcement Card template
+#}
+
+<div class="card h-100 shadow-sm">
+  <div class="media-row">
+    {% set media_entity = paragraph.field_image.entity %}
+    {% if media_entity %}
+      {% set image_file = media_entity.field_media_image.entity %}
+      {% if image_file %}
+        <img src="{{ file_url(image_file.uri.value) }}" 
+             class="card-img-top" 
+             alt="{{ paragraph.field_title.value|striptags }}">
+      {% endif %}
+    {% endif %}
+  </div>  
+
+  <div class="card-body">
+    <h5>{{ paragraph.field_title.value }}</h5>
+  </div>
+</div>

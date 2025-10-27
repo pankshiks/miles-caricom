@@ -1,0 +1,22 @@
+uuid: aaa10239-2bb0-48bd-ae39-8491c66d66fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b5caricom
+_core:
+  default_config_hash: jjppyWlF3KRS_Eb-hoNLjoK3qJMK5XVERk2gTBoRvfA
+id: b5caricom_content
+theme: b5caricom
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

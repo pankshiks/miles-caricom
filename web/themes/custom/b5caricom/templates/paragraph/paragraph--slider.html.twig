@@ -1,0 +1,17 @@
+{#
+  Template: paragraph--slider.html.twig
+  Paragraph type: Slider
+#}
+
+
+<section class="hero" id="home">
+  <div class="hero-slider" id="hero-slider">
+    {# Loop through nested paragraph items safely #}
+    {% for item in paragraph.field_slider_items %}
+      {% set slider_item = item.entity %}
+      {% if slider_item %}
+        {% include "paragraph--slider-item.html.twig" with { paragraph: slider_item } %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>

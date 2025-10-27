@@ -1,0 +1,20 @@
+uuid: 30cfc752-9f91-43a9-8dbb-7a8a43d8f3d9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - b5caricom
+_core:
+  default_config_hash: 7VFf-46S4OyJZwnR3P8QIve465oMaXFMMmvUsN9ZYLQ
+id: b5caricom_local_actions
+theme: b5caricom
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

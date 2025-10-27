@@ -1,0 +1,35 @@
+{#
+  Featured Announcement section template
+#}
+
+<section class="space-tb-50 bg-style gray-overlay"
+  {% set bg_media = paragraph.field_image.entity %}
+  {% if bg_media %}
+    {% set bg_file = bg_media.field_media_image.entity %}
+    {% if bg_file %}
+      style="background-image: url('{{ file_url(bg_file.uri.value) }}');"
+    {% endif %}
+  {% endif %}
+>
+  <div class="container">
+    <div class="heading-block text-center pb-5 pt-5">
+      <h1 class="text-blue">{{ paragraph.field_title.value }}</h1>
+    </div>
+
+    <div class="row g-4">
+      {% for card in paragraph.field_announcement_card %}
+        <div class="col-md-6">
+          {{ card }}
+        </div>
+      {% endfor %}
+    </div>
+
+    {% if paragraph.field_cta_s.0.url %}
+      <div class="btn-row space-tb-50 text-center">
+        <a href="{{ paragraph.field_cta_s.0.url }}" class="btn blue-bg" tabindex="-1">
+          {{ paragraph.field_cta_s.0.title ?: 'Learn More' }}
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</section>

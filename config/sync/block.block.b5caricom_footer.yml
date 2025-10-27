@@ -1,0 +1,27 @@
+uuid: 154106b8-f7c9-41c4-873e-9140cec79acc
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - b5caricom
+_core:
+  default_config_hash: 4JkgkBbBXYeQF7VaiWjIzUaC9ZiH_7GY3Od-r8V4fzI
+id: b5caricom_footer
+theme: b5caricom
+region: header_right
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 29693edd-73e5-4ae6-9d8c-62ecd59e13a0
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - b5caricom
+_core:
+  default_config_hash: 7PDXePGd2L1UCYJL5re5HOwLUVUZ34DCHaIjsc8wf_0
+id: b5caricom_powered_by_drupal
+theme: b5caricom
+region: header_right
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

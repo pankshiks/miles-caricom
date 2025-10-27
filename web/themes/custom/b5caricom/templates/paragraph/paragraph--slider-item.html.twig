@@ -1,0 +1,35 @@
+{#
+  Template: paragraph--slider-item.html.twig
+  Paragraph type: Slider Item
+#}
+
+{% set media_entity = paragraph.field_image.entity %}
+{% if media_entity and media_entity.field_media_image.entity %}
+  {% set image_url = file_url(media_entity.field_media_image.entity.uri.value) %}
+{% endif %}
+
+{% set title = paragraph.field_title.value %}
+{% set description = paragraph.field_description.value %}
+{% set cta = paragraph.field_cta_s.0 %}
+
+<div class="hero-slide">
+  <div class="hero-overlay"></div>
+
+  {% if image_url %}
+    <img src="{{ image_url }}" alt="{{ title|striptags }}">
+  {% endif %}
+
+  <div class="hero-content">
+    {% if title %}
+      <h2 class="sub-heading fw-semibold">{{ title }}</h2>
+    {% endif %}
+    {% if description %}
+      <div class="slide-description">{{ description|raw }}</div>
+    {% endif %}
+    {% if cta.url %}
+      <a href="{{ cta.url }}" class="btn yellow-bg">
+        {{ cta.title ?: 'Learn More' }}
+      </a>
+    {% endif %}
+  </div>
+</div>

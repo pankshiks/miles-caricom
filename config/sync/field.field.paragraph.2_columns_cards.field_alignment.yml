@@ -1,0 +1,21 @@
+uuid: 2af46f0e-a91b-4c32-9360-ef6129ff5bdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_alignment
+    - paragraphs.paragraphs_type.2_columns_cards
+  module:
+    - options
+id: paragraph.2_columns_cards.field_alignment
+field_name: field_alignment
+entity_type: paragraph
+bundle: 2_columns_cards
+label: 'Image alignment'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

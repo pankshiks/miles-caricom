@@ -1,0 +1,127 @@
+uuid: 489a6882-1d69-48dd-83be-21ec36381ed6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_components
+    - node.type.page
+    - paragraphs.paragraphs_type.2_columns_cards
+    - paragraphs.paragraphs_type.60_40_content_image_layout
+    - paragraphs.paragraphs_type.accordians
+    - paragraphs.paragraphs_type.banner
+    - paragraphs.paragraphs_type.featured_announcements
+    - paragraphs.paragraphs_type.quotes
+    - paragraphs.paragraphs_type.slider
+  module:
+    - entity_reference_revisions
+id: node.page.field_components
+field_name: field_components
+entity_type: node
+bundle: page
+label: Components
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      2_columns_cards: 2_columns_cards
+      60_40_content_image_layout: 60_40_content_image_layout
+      accordians: accordians
+      banner: banner
+      featured_announcements: featured_announcements
+      quotes: quotes
+      slider: slider
+    negate: 0
+    target_bundles_drag_drop:
+      2_columns_cards:
+        weight: 30
+        enabled: true
+      60_40_content_image_layout:
+        weight: 31
+        enabled: true
+      accordian_items:
+        weight: 32
+        enabled: false
+      accordians:
+        weight: 33
+        enabled: true
+      acheivements:
+        weight: 34
+        enabled: false
+      announcement_card:
+        weight: 35
+        enabled: false
+      banner:
+        weight: 36
+        enabled: true
+      callout_items:
+        weight: 37
+        enabled: false
+      card:
+        weight: 38
+        enabled: false
+      cards_with_image:
+        weight: 39
+        enabled: false
+      community_states_overview:
+        weight: 40
+        enabled: false
+      cta_section:
+        weight: 41
+        enabled: false
+      discover_cta:
+        weight: 42
+        enabled: false
+      featured_announcements:
+        weight: 43
+        enabled: true
+      icons_with_text:
+        weight: 44
+        enabled: false
+      image_callout:
+        weight: 45
+        enabled: false
+      institution:
+        weight: 46
+        enabled: false
+      institution_items:
+        weight: 47
+        enabled: false
+      large_image_with_cta_s:
+        weight: 48
+        enabled: false
+      management_team:
+        weight: 49
+        enabled: false
+      management_team_member:
+        weight: 50
+        enabled: false
+      member_states:
+        weight: 51
+        enabled: false
+      milestones_acheivements:
+        weight: 52
+        enabled: false
+      quotes:
+        weight: 53
+        enabled: true
+      secretaries_team:
+        weight: 54
+        enabled: false
+      slider:
+        weight: 55
+        enabled: true
+      slider_items:
+        weight: 56
+        enabled: false
+      states_with_flags:
+        weight: 57
+        enabled: false
+      team:
+        weight: 58
+        enabled: false
+field_type: entity_reference_revisions

@@ -10,14 +10,16 @@ ckeditor_stylesheets:
 ckeditor5-stylesheets:
   - css/ck5style.css
 regions:
-  header: Header
-  nav_branding: 'Navigation branding region'
-  nav_main: 'Main navigation region'
-  nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
-  breadcrumb: Breadcrumbs
-  content: 'Main content'
-  sidebar_first: 'Sidebar first'
-  sidebar_second: 'Sidebar second'
-  footer: Footer
+  header_right: 'Header Right'
+  header_center: 'Header Center'
+  header_left: 'Header Left'
+  primary_menus: 'Primary Menus'
+  breadcrumb: 'Breadcrumbs'
+  banner: 'Banner'
+  content: 'Content'
+  footer_right: 'Footer Right'
+  footer_center: 'Footer Center'
+  footer_left: 'Footer Left'
+
 libraries-override:
   bootstrap5/global-styling: false

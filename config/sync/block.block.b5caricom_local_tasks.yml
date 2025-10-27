@@ -1,0 +1,22 @@
+uuid: 01b02be3-7d39-4bde-812d-2b041173c447
+langcode: en
+status: true
+dependencies:
+  theme:
+    - b5caricom
+_core:
+  default_config_hash: ThS484KmKiPYHyLtcXlKagiOcoHRlmtXJpE8qDCukPU
+id: b5caricom_local_tasks
+theme: b5caricom
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

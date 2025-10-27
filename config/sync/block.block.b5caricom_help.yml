@@ -1,0 +1,22 @@
+uuid: c831ec15-213c-4513-a378-0ea91ccaa577
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - b5caricom
+_core:
+  default_config_hash: k3x7JvFXOI3TjZ1wwJOw6ZIiQMC_YLfXDMocOwoCO-M
+id: b5caricom_help
+theme: b5caricom
+region: content
+weight: -4
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

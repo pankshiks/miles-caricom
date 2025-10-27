@@ -1,0 +1,27 @@
+uuid: a4d3bca6-7f1c-44fb-a2f4-65116672b170
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - b5caricom
+_core:
+  default_config_hash: 2OUuihiIIe38Bj3RVTfbfDen8MUeQSfDrDGCHTwkHuM
+id: b5caricom_account_menu
+theme: b5caricom
+region: header_right
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

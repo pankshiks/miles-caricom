@@ -1,0 +1,22 @@
+uuid: 5ae522a4-46ff-45b8-a130-051b4a4ff812
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - b5caricom
+_core:
+  default_config_hash: Y0a8uxvQMlvK43ao5C57VA3-2BLnM24cxEdYcUp26o8
+id: b5caricom_breadcrumbs
+theme: b5caricom
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

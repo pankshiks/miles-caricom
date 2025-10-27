@@ -1,0 +1,20 @@
+uuid: 817b62a9-b01b-4b5a-880d-94d2933bf798
+langcode: en
+status: false
+dependencies:
+  theme:
+    - b5caricom
+_core:
+  default_config_hash: BTWQBX0CSS_4In8dSZsO0DtYvXhqGu8CrTzlDAsfeZM
+id: b5caricom_page_title
+theme: b5caricom
+region: content
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

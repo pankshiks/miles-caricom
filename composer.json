@@ -24,6 +24,7 @@
         "drupal/core-project-message": "^10.5",
         "drupal/core-recommended": "^10.5",
         "drupal/easy_breadcrumb": "^2.0",
+        "drupal/file_entity": "^2.2",
         "drupal/metatag": "^2.2",
         "drupal/paragraphs": "^1.19",
         "drupal/redirect": "^1.12",
@@ -31,6 +32,7 @@
         "drupal/sitemap": "^2.4",
         "drupal/svg_image_field": "^2.3",
         "drupal/views_slideshow": "^5.0",
+        "drupal/viewsreference": "^2.0@beta",
         "drupal/webform": "^6.2",
         "drush/drush": "^12.5"
     },

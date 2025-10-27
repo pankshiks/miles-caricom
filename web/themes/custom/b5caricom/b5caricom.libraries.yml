@@ -2,3 +2,25 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+      assets/css/bootstrap.css: {}
+      assets/css/slick.css: {}
+  js:
+    assets/js/slick.js: {}
+    assets/js/custom.js: {}
+  dependencies:
+    - core/jquery
+
+
+banner-slider:
+  css:
+    theme:
+      https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css: {}
+      https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css: {}
+  js:
+    https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js: {}
+    assets/js/banner-slider.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once
+    - core/drupalSettings

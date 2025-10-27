@@ -102,3 +102,17 @@ docker-compose.yml
 .devcontainer
 .dockerignore
 docker-logs
+
+# Ignore npm/yarn files
+/node_modules/
+/npm-debug.log
+/yarn-error.log
+yarn-debug.log-*
+yarn-debug.log
+yarn-error.log-*
+# Ignore build files
+/dist/  
+/build/
+/web/themes/custom/*/node_modules/
+/web/themes/custom/*/dist/
+/web/themes/custom/*/build/
