@@ -1,0 +1,23 @@
+uuid: 8cad92ba-9cd1-4171-b1fe-d8988e1b60cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.states_with_flags
+  module:
+    - link
+id: paragraph.states_with_flags.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: states_with_flags
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

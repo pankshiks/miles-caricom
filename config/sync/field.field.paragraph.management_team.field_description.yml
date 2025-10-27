@@ -1,0 +1,24 @@
+uuid: 972c6e3f-fb69-424c-9946-d97591fbdc07
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.management_team
+  module:
+    - text
+id: paragraph.management_team.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: management_team
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

@@ -1,0 +1,19 @@
+uuid: 42e7c952-6f0a-420c-832c-8fde76bd4c95
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sub_title
+    - paragraphs.paragraphs_type.milestones_acheivements
+id: paragraph.milestones_acheivements.field_sub_title
+field_name: field_sub_title
+entity_type: paragraph
+bundle: milestones_acheivements
+label: 'Sub Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

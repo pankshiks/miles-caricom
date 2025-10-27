@@ -1,0 +1,23 @@
+uuid: d2d6c396-24c6-477c-be84-b3e087539d91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta_s
+    - paragraphs.paragraphs_type.slider_items
+  module:
+    - link
+id: paragraph.slider_items.field_cta_s
+field_name: field_cta_s
+entity_type: paragraph
+bundle: slider_items
+label: "CTA's "
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

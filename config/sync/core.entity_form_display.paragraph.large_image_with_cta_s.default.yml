@@ -1,0 +1,45 @@
+uuid: 8f73e112-c9b1-48fa-92e7-0f95ed7fae1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.large_image_with_cta_s.field_cta_s
+    - field.field.paragraph.large_image_with_cta_s.field_image
+    - field.field.paragraph.large_image_with_cta_s.field_title
+    - paragraphs.paragraphs_type.large_image_with_cta_s
+  module:
+    - link
+id: paragraph.large_image_with_cta_s.default
+targetEntityType: paragraph
+bundle: large_image_with_cta_s
+mode: default
+content:
+  field_cta_s:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_image:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,24 @@
+uuid: c939d1ff-c962-4e5d-84b9-94327cef1806
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_text_visibility_on_mobile
+field_name: field_text_visibility_on_mobile
+entity_type: paragraph
+type: list_float
+settings:
+  allowed_values:
+    -
+      value: 1.0
+      label: Show
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

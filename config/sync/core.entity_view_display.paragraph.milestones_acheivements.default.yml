@@ -1,0 +1,30 @@
+uuid: be5bb46f-06ae-406d-9ad6-95b0d7e3be08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.milestones_acheivements.field_sub_title
+    - field.field.paragraph.milestones_acheivements.field_title
+    - paragraphs.paragraphs_type.milestones_acheivements
+id: paragraph.milestones_acheivements.default
+targetEntityType: paragraph
+bundle: milestones_acheivements
+mode: default
+content:
+  field_sub_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

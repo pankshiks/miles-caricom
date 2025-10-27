@@ -1,0 +1,19 @@
+uuid: 28b4bdff-5dc1-473f-9573-24b030961df6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sectio_heading
+    - paragraphs.paragraphs_type.2_columns_cards
+id: paragraph.2_columns_cards.field_sectio_heading
+field_name: field_sectio_heading
+entity_type: paragraph
+bundle: 2_columns_cards
+label: 'Sectio  Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

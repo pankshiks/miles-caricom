@@ -1,0 +1,21 @@
+uuid: a6aed9fe-7b39-4e92-b805-ae93325b03b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_background_color
+    - paragraphs.paragraphs_type.icons_with_text
+  module:
+    - color_pickr
+id: paragraph.icons_with_text.field_background_color
+field_name: field_background_color
+entity_type: paragraph
+bundle: icons_with_text
+label: 'Background color'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: color_pickr_code

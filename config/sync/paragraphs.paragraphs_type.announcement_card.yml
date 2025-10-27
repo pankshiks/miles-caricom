@@ -1,0 +1,10 @@
+uuid: a267fb24-4031-4fcb-bd51-3cca3a284a97
+langcode: en
+status: true
+dependencies: {  }
+id: announcement_card
+label: 'Announcement Card'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

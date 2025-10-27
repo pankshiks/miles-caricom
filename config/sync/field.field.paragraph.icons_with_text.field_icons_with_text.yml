@@ -1,0 +1,48 @@
+uuid: 5ec19ba4-46ff-4944-8aa7-81f855dc5ce1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icons_with_text
+    - paragraphs.paragraphs_type.icons_with_text
+  module:
+    - entity_reference_revisions
+id: paragraph.icons_with_text.field_icons_with_text
+field_name: field_icons_with_text
+entity_type: paragraph
+bundle: icons_with_text
+label: 'Icons with Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      icons_with_text: icons_with_text
+    negate: 0
+    target_bundles_drag_drop:
+      2_columns_cards:
+        weight: 8
+        enabled: false
+      banner:
+        weight: 9
+        enabled: false
+      callout_items:
+        weight: 10
+        enabled: false
+      cta_section:
+        weight: 11
+        enabled: false
+      icons_with_text:
+        weight: 12
+        enabled: true
+      image_callout:
+        weight: 13
+        enabled: false
+      quotes:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

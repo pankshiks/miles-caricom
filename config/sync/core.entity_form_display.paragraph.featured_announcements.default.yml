@@ -1,0 +1,65 @@
+uuid: bddbfe30-88d6-4984-8317-2746ea55f1b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.featured_announcements.field_announcement_card
+    - field.field.paragraph.featured_announcements.field_cta_s
+    - field.field.paragraph.featured_announcements.field_image
+    - field.field.paragraph.featured_announcements.field_title
+    - paragraphs.paragraphs_type.featured_announcements
+  module:
+    - link
+    - paragraphs
+id: paragraph.featured_announcements.default
+targetEntityType: paragraph
+bundle: featured_announcements
+mode: default
+content:
+  field_announcement_card:
+    type: paragraphs
+    weight: 4
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_cta_s:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_image:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,55 @@
+uuid: dd3682f4-df2b-475f-84e5-abfbd4e2008f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.institution_items.field_description
+    - field.field.paragraph.institution_items.field_image
+    - field.field.paragraph.institution_items.field_link
+    - field.field.paragraph.institution_items.field_title
+    - paragraphs.paragraphs_type.institution_items
+  module:
+    - link
+    - text
+id: paragraph.institution_items.default
+targetEntityType: paragraph
+bundle: institution_items
+mode: default
+content:
+  field_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

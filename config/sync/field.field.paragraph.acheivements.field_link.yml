@@ -1,0 +1,23 @@
+uuid: b4bad80c-f76c-4482-945c-96cdc290c403
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.acheivements
+  module:
+    - link
+id: paragraph.acheivements.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: acheivements
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

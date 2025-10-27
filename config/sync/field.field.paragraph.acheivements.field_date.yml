@@ -1,0 +1,21 @@
+uuid: cf0c76a1-bcdc-4da2-890b-8514d5effe69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_date
+    - paragraphs.paragraphs_type.acheivements
+  module:
+    - datetime
+id: paragraph.acheivements.field_date
+field_name: field_date
+entity_type: paragraph
+bundle: acheivements
+label: Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

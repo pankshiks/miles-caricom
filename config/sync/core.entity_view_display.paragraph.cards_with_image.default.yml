@@ -1,0 +1,38 @@
+uuid: 0c781c6b-956a-43df-8a54-1933b69ddb21
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cards_with_image.field_card
+    - field.field.paragraph.cards_with_image.field_cta_s
+    - paragraphs.paragraphs_type.cards_with_image
+  module:
+    - entity_reference_revisions
+    - link
+id: paragraph.cards_with_image.default
+targetEntityType: paragraph
+bundle: cards_with_image
+mode: default
+content:
+  field_card:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_cta_s:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

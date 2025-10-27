@@ -1,0 +1,10 @@
+uuid: a4e773db-0f69-4aaf-94a1-751d319a1931
+langcode: en
+status: true
+dependencies: {  }
+id: community_states_overview
+label: 'Community States Overview'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

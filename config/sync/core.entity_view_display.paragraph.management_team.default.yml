@@ -1,0 +1,56 @@
+uuid: 316fcfb2-2400-4c17-82d6-11f5085275bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.management_team.field_cta_s
+    - field.field.paragraph.management_team.field_description
+    - field.field.paragraph.management_team.field_management_team_member
+    - field.field.paragraph.management_team.field_title
+    - paragraphs.paragraphs_type.management_team
+  module:
+    - entity_reference_revisions
+    - link
+    - text
+id: paragraph.management_team.default
+targetEntityType: paragraph
+bundle: management_team
+mode: default
+content:
+  field_cta_s:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_management_team_member:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

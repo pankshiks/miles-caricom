@@ -1,0 +1,21 @@
+uuid: ce2a3cc4-4726-4b8a-86ee-b9b18c6342bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_date
+    - paragraphs.paragraphs_type.callout_items
+  module:
+    - datetime
+id: paragraph.callout_items.field_date
+field_name: field_date
+entity_type: paragraph
+bundle: callout_items
+label: Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

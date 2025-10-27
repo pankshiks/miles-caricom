@@ -1,0 +1,20 @@
+uuid: c6e314b3-983f-494e-9b15-89fdbbc373af
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+id: paragraph.field_image_alignment
+field_name: field_image_alignment
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,64 @@
+uuid: 812f1ad8-9899-4f79-9b75-60ebe4f26855
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.discover_cta.field_cta_s
+    - field.field.paragraph.discover_cta.field_description
+    - field.field.paragraph.discover_cta.field_image
+    - field.field.paragraph.discover_cta.field_sub_title
+    - field.field.paragraph.discover_cta.field_title
+    - paragraphs.paragraphs_type.discover_cta
+  module:
+    - link
+    - text
+id: paragraph.discover_cta.default
+targetEntityType: paragraph
+bundle: discover_cta
+mode: default
+content:
+  field_cta_s:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sub_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

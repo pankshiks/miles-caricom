@@ -1,0 +1,10 @@
+uuid: 6e5bfd3c-7732-49fc-a228-41366bc3b8ff
+langcode: en
+status: true
+dependencies: {  }
+id: featured_announcements
+label: 'Featured Announcements'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

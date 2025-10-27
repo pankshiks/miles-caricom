@@ -1,0 +1,103 @@
+uuid: 250a54e2-7d1d-41e7-b0c9-5d194d05402f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_institution_items
+    - paragraphs.paragraphs_type.institution
+    - paragraphs.paragraphs_type.institution_items
+  module:
+    - entity_reference_revisions
+id: paragraph.institution.field_institution_items
+field_name: field_institution_items
+entity_type: paragraph
+bundle: institution
+label: 'Institution Items'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      institution_items: institution_items
+    negate: 0
+    target_bundles_drag_drop:
+      2_columns_cards:
+        weight: 26
+        enabled: false
+      60_40_content_image_layout:
+        weight: 27
+        enabled: false
+      acheivements:
+        weight: 28
+        enabled: false
+      announcement_card:
+        weight: 29
+        enabled: false
+      banner:
+        weight: 30
+        enabled: false
+      callout_items:
+        weight: 31
+        enabled: false
+      card:
+        weight: 32
+        enabled: false
+      cards_with_image:
+        weight: 33
+        enabled: false
+      community_states_overview:
+        weight: 34
+        enabled: false
+      cta_section:
+        weight: 35
+        enabled: false
+      discover_cta:
+        weight: 36
+        enabled: false
+      featured_announcements:
+        weight: 37
+        enabled: false
+      icons_with_text:
+        weight: 38
+        enabled: false
+      image_callout:
+        weight: 39
+        enabled: false
+      institution:
+        weight: 40
+        enabled: false
+      institution_items:
+        weight: 41
+        enabled: true
+      large_image_with_cta_s:
+        weight: 42
+        enabled: false
+      member_states:
+        weight: 43
+        enabled: false
+      milestones_acheivements:
+        weight: 44
+        enabled: false
+      quotes:
+        weight: 45
+        enabled: false
+      secretaries_team:
+        weight: 46
+        enabled: false
+      slider:
+        weight: 47
+        enabled: false
+      slider_items:
+        weight: 48
+        enabled: false
+      states_with_flags:
+        weight: 49
+        enabled: false
+      team:
+        weight: 50
+        enabled: false
+field_type: entity_reference_revisions

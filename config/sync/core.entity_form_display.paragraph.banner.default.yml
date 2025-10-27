@@ -1,0 +1,34 @@
+uuid: df24e4cb-f103-4237-be75-90c7d985926b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.banner.field_image
+    - field.field.paragraph.banner.field_title
+    - paragraphs.paragraphs_type.banner
+id: paragraph.banner.default
+targetEntityType: paragraph
+bundle: banner
+mode: default
+content:
+  field_image:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,85 @@
+uuid: 275a10ae-a327-4d07-a2df-25c5b515ae80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card
+    - paragraphs.paragraphs_type.card
+    - paragraphs.paragraphs_type.cards_with_image
+  module:
+    - entity_reference_revisions
+id: paragraph.cards_with_image.field_card
+field_name: field_card
+entity_type: paragraph
+bundle: cards_with_image
+label: Card
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      card: card
+    negate: 0
+    target_bundles_drag_drop:
+      2_columns_cards:
+        weight: 20
+        enabled: false
+      announcement_card:
+        weight: 21
+        enabled: false
+      banner:
+        weight: 22
+        enabled: false
+      callout_items:
+        weight: 23
+        enabled: false
+      card:
+        weight: 24
+        enabled: true
+      cards_with_image:
+        weight: 25
+        enabled: false
+      community_states_overview:
+        weight: 26
+        enabled: false
+      cta_section:
+        weight: 27
+        enabled: false
+      discover_cta:
+        weight: 28
+        enabled: false
+      featured_announcements:
+        weight: 29
+        enabled: false
+      icons_with_text:
+        weight: 30
+        enabled: false
+      image_callout:
+        weight: 31
+        enabled: false
+      member_states:
+        weight: 32
+        enabled: false
+      quotes:
+        weight: 33
+        enabled: false
+      secretaries_team:
+        weight: 34
+        enabled: false
+      slider:
+        weight: 35
+        enabled: false
+      slider_items:
+        weight: 36
+        enabled: false
+      states_with_flags:
+        weight: 37
+        enabled: false
+      team:
+        weight: 38
+        enabled: false
+field_type: entity_reference_revisions

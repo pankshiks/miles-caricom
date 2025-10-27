@@ -1,0 +1,73 @@
+uuid: c958d821-7799-401d-9bfe-4a31a1bed620
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_announcement_card
+    - paragraphs.paragraphs_type.announcement_card
+    - paragraphs.paragraphs_type.featured_announcements
+  module:
+    - entity_reference_revisions
+id: paragraph.featured_announcements.field_announcement_card
+field_name: field_announcement_card
+entity_type: paragraph
+bundle: featured_announcements
+label: 'Announcement card'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      announcement_card: announcement_card
+    negate: 0
+    target_bundles_drag_drop:
+      2_columns_cards:
+        weight: 16
+        enabled: false
+      announcement_card:
+        weight: 17
+        enabled: true
+      banner:
+        weight: 18
+        enabled: false
+      callout_items:
+        weight: 19
+        enabled: false
+      community_states_overview:
+        weight: 20
+        enabled: false
+      cta_section:
+        weight: 21
+        enabled: false
+      discover_cta:
+        weight: 22
+        enabled: false
+      featured_announcements:
+        weight: 23
+        enabled: false
+      icons_with_text:
+        weight: 24
+        enabled: false
+      image_callout:
+        weight: 25
+        enabled: false
+      member_states:
+        weight: 26
+        enabled: false
+      quotes:
+        weight: 27
+        enabled: false
+      slider:
+        weight: 28
+        enabled: false
+      slider_items:
+        weight: 29
+        enabled: false
+      states_with_flags:
+        weight: 30
+        enabled: false
+field_type: entity_reference_revisions

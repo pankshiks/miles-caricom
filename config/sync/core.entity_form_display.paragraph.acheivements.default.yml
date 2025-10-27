@@ -1,0 +1,83 @@
+uuid: 4db282b3-8892-4ae2-b7a1-cb54dcfbd12d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.acheivements.field_date
+    - field.field.paragraph.acheivements.field_description
+    - field.field.paragraph.acheivements.field_image
+    - field.field.paragraph.acheivements.field_image_alignment
+    - field.field.paragraph.acheivements.field_link
+    - field.field.paragraph.acheivements.field_title
+    - field.field.paragraph.acheivements.field_year
+    - paragraphs.paragraphs_type.acheivements
+  module:
+    - datetime
+    - link
+    - text
+id: paragraph.acheivements.default
+targetEntityType: paragraph
+bundle: acheivements
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_image_alignment:
+    type: entity_reference_autocomplete
+    weight: 3
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_year:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

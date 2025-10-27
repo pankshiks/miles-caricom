@@ -1,0 +1,40 @@
+uuid: 0c1b25b2-120e-4997-80b9-5fac42c3b507
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.quotes.field_background_color
+    - field.field.paragraph.quotes.field_description
+    - field.field.paragraph.quotes.field_title
+    - paragraphs.paragraphs_type.quotes
+  module:
+    - color_pickr
+    - text
+id: paragraph.quotes.default
+targetEntityType: paragraph
+bundle: quotes
+mode: default
+content:
+  field_background_color:
+    type: color_pickr_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

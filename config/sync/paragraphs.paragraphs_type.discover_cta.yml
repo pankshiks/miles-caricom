@@ -1,0 +1,10 @@
+uuid: d03ca6be-0205-4c9d-9128-30494d56d919
+langcode: en
+status: true
+dependencies: {  }
+id: discover_cta
+label: 'Discover CTA'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

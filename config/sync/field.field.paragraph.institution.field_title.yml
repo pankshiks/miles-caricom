@@ -1,0 +1,19 @@
+uuid: a70c2157-8eef-43f7-b1d1-1edb09ade915
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.institution
+id: paragraph.institution.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: institution
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

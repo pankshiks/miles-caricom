@@ -1,0 +1,19 @@
+uuid: 7dc99950-aa3e-41ce-a782-ca3319977179
+langcode: en
+status: true
+dependencies:
+  module:
+    - color_pickr
+    - paragraphs
+id: paragraph.field_background_color
+field_name: field_background_color
+entity_type: paragraph
+type: color_pickr_code
+settings: {  }
+module: color_pickr
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

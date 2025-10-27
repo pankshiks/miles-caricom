@@ -1,0 +1,45 @@
+uuid: 76349bdb-59d2-4656-a0a2-83f1ec4fb208
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cards_with_image.field_card
+    - field.field.paragraph.cards_with_image.field_cta_s
+    - paragraphs.paragraphs_type.cards_with_image
+  module:
+    - link
+    - paragraphs
+id: paragraph.cards_with_image.default
+targetEntityType: paragraph
+bundle: cards_with_image
+mode: default
+content:
+  field_card:
+    type: paragraphs
+    weight: 4
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_cta_s:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

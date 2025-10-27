@@ -1,0 +1,43 @@
+uuid: 91bd27e9-ec4c-4409-adfa-4a106df2cf2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.community_states_overview.field_member_states
+    - field.field.paragraph.community_states_overview.field_states_with_flags
+    - field.field.paragraph.community_states_overview.field_title
+    - paragraphs.paragraphs_type.community_states_overview
+  module:
+    - entity_reference_revisions
+id: paragraph.community_states_overview.default
+targetEntityType: paragraph
+bundle: community_states_overview
+mode: default
+content:
+  field_member_states:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_states_with_flags:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

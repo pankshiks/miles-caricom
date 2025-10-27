@@ -1,0 +1,29 @@
+uuid: 9512f828-fee9-4846-ab6b-4486bbae4374
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_alignment
+    - media.type.image
+    - paragraphs.paragraphs_type.acheivements
+id: paragraph.acheivements.field_image_alignment
+field_name: field_image_alignment
+entity_type: paragraph
+bundle: acheivements
+label: 'Image Icon'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

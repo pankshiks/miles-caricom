@@ -1,0 +1,10 @@
+uuid: 091cc401-5ec4-44d3-849a-fa99364dc001
+langcode: en
+status: true
+dependencies: {  }
+id: icons_with_text
+label: 'Icons with Text'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

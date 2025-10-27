@@ -1,0 +1,21 @@
+uuid: ac2c5946-8fc9-4389-885b-ea4228f3906b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_visibility_on_mobile
+    - paragraphs.paragraphs_type.slider_items
+  module:
+    - options
+id: paragraph.slider_items.field_text_visibility_on_mobile
+field_name: field_text_visibility_on_mobile
+entity_type: paragraph
+bundle: slider_items
+label: 'Text Visibility on mobile'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_float

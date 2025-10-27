@@ -1,0 +1,10 @@
+uuid: c7d8fbb8-e81b-497a-a397-dbd0f2b87dc8
+langcode: en
+status: true
+dependencies: {  }
+id: large_image_with_cta_s
+label: "Large image with CTA's"
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

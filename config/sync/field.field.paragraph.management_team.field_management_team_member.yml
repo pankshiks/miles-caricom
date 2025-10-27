@@ -1,0 +1,115 @@
+uuid: cc0a205f-5bc1-439c-8b7d-8c1f7ac7068c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_management_team_member
+    - paragraphs.paragraphs_type.management_team
+    - paragraphs.paragraphs_type.management_team_member
+  module:
+    - entity_reference_revisions
+id: paragraph.management_team.field_management_team_member
+field_name: field_management_team_member
+entity_type: paragraph
+bundle: management_team
+label: 'Management Team Member'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      management_team_member: management_team_member
+    negate: 0
+    target_bundles_drag_drop:
+      2_columns_cards:
+        weight: 30
+        enabled: false
+      60_40_content_image_layout:
+        weight: 31
+        enabled: false
+      accordian_items:
+        weight: 33
+        enabled: false
+      accordians:
+        weight: 32
+        enabled: false
+      acheivements:
+        weight: 34
+        enabled: false
+      announcement_card:
+        weight: 35
+        enabled: false
+      banner:
+        weight: 36
+        enabled: false
+      callout_items:
+        weight: 37
+        enabled: false
+      card:
+        weight: 38
+        enabled: false
+      cards_with_image:
+        weight: 39
+        enabled: false
+      community_states_overview:
+        weight: 40
+        enabled: false
+      cta_section:
+        weight: 41
+        enabled: false
+      discover_cta:
+        weight: 42
+        enabled: false
+      featured_announcements:
+        weight: 43
+        enabled: false
+      icons_with_text:
+        weight: 44
+        enabled: false
+      image_callout:
+        weight: 45
+        enabled: false
+      institution:
+        weight: 46
+        enabled: false
+      institution_items:
+        weight: 47
+        enabled: false
+      large_image_with_cta_s:
+        weight: 48
+        enabled: false
+      management_team:
+        weight: 49
+        enabled: false
+      management_team_member:
+        weight: 50
+        enabled: true
+      member_states:
+        weight: 51
+        enabled: false
+      milestones_acheivements:
+        weight: 52
+        enabled: false
+      quotes:
+        weight: 53
+        enabled: false
+      secretaries_team:
+        weight: 54
+        enabled: false
+      slider:
+        weight: 55
+        enabled: false
+      slider_items:
+        weight: 56
+        enabled: false
+      states_with_flags:
+        weight: 57
+        enabled: false
+      team:
+        weight: 58
+        enabled: false
+field_type: entity_reference_revisions

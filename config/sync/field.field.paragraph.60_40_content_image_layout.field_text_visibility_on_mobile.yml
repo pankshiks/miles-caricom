@@ -1,0 +1,21 @@
+uuid: b882e1d7-7900-4497-8f05-9015af02efd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_visibility_on_mobile
+    - paragraphs.paragraphs_type.60_40_content_image_layout
+  module:
+    - options
+id: paragraph.60_40_content_image_layout.field_text_visibility_on_mobile
+field_name: field_text_visibility_on_mobile
+entity_type: paragraph
+bundle: 60_40_content_image_layout
+label: 'List of content'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_float

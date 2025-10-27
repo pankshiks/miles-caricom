@@ -1,0 +1,10 @@
+uuid: 24d77586-bedc-434d-ac35-332b704b2aa0
+langcode: en
+status: true
+dependencies: {  }
+id: states_with_flags
+label: 'States with flags'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

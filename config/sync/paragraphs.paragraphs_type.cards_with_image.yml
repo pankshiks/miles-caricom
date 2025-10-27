@@ -1,0 +1,10 @@
+uuid: e05617fb-ee65-4013-87dc-9db311924042
+langcode: en
+status: true
+dependencies: {  }
+id: cards_with_image
+label: 'Cards With Image'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

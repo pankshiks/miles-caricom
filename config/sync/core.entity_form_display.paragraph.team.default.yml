@@ -1,0 +1,54 @@
+uuid: ef510947-ea1b-477e-997c-368a11b671f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.team.field_cta_s
+    - field.field.paragraph.team.field_image
+    - field.field.paragraph.team.field_position
+    - field.field.paragraph.team.field_title
+    - paragraphs.paragraphs_type.team
+  module:
+    - link
+id: paragraph.team.default
+targetEntityType: paragraph
+bundle: team
+mode: default
+content:
+  field_cta_s:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_image:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_position:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

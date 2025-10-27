@@ -1,0 +1,10 @@
+uuid: 4f41c109-5c69-4380-a761-cea1e31bd461
+langcode: en
+status: true
+dependencies: {  }
+id: institution_items
+label: 'Institution Items'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

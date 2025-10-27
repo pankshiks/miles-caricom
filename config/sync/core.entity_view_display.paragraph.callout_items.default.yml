@@ -1,0 +1,75 @@
+uuid: 0dc73379-f5ae-48be-9b8b-119f9ed92c64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.callout_items.field_date
+    - field.field.paragraph.callout_items.field_description
+    - field.field.paragraph.callout_items.field_image
+    - field.field.paragraph.callout_items.field_link
+    - field.field.paragraph.callout_items.field_tags
+    - field.field.paragraph.callout_items.field_title
+    - paragraphs.paragraphs_type.callout_items
+  module:
+    - datetime
+    - link
+    - text
+id: paragraph.callout_items.default
+targetEntityType: paragraph
+bundle: callout_items
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

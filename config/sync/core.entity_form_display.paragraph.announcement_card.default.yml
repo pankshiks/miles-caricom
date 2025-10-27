@@ -1,0 +1,45 @@
+uuid: 33cb98a1-4c41-4e6a-bc74-76439bf6d3ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.announcement_card.field_image
+    - field.field.paragraph.announcement_card.field_link
+    - field.field.paragraph.announcement_card.field_title
+    - paragraphs.paragraphs_type.announcement_card
+  module:
+    - link
+id: paragraph.announcement_card.default
+targetEntityType: paragraph
+bundle: announcement_card
+mode: default
+content:
+  field_image:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

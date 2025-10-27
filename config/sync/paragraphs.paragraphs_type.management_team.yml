@@ -1,0 +1,10 @@
+uuid: 290f5466-beea-4d3b-af49-1e4272e7682c
+langcode: en
+status: true
+dependencies: {  }
+id: management_team
+label: 'Management Team'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

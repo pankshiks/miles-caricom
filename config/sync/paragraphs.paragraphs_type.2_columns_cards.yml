@@ -1,0 +1,10 @@
+uuid: 83223660-b68a-4ad9-9854-d33163519ba3
+langcode: en
+status: true
+dependencies: {  }
+id: 2_columns_cards
+label: '2 Columns cards'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,10 @@
+uuid: 14405b3d-4720-4ea2-93ef-89f6461cc396
+langcode: en
+status: true
+dependencies: {  }
+id: 60_40_content_image_layout
+label: '60-40 Content-Image layout'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

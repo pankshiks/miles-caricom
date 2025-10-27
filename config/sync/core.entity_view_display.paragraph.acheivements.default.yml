@@ -1,0 +1,85 @@
+uuid: 68c7e8f1-850e-4fcb-80c8-af45e62914cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.acheivements.field_date
+    - field.field.paragraph.acheivements.field_description
+    - field.field.paragraph.acheivements.field_image
+    - field.field.paragraph.acheivements.field_image_alignment
+    - field.field.paragraph.acheivements.field_link
+    - field.field.paragraph.acheivements.field_title
+    - field.field.paragraph.acheivements.field_year
+    - paragraphs.paragraphs_type.acheivements
+  module:
+    - datetime
+    - link
+    - text
+id: paragraph.acheivements.default
+targetEntityType: paragraph
+bundle: acheivements
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image_alignment:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_year:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

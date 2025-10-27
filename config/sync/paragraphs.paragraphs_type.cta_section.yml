@@ -1,0 +1,10 @@
+uuid: 8db6b923-1716-43c8-8f61-ed6686de0a41
+langcode: en
+status: true
+dependencies: {  }
+id: cta_section
+label: 'CTA section'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

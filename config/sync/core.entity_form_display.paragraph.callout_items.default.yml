@@ -1,0 +1,74 @@
+uuid: fcef1574-5361-4d10-9749-fade3aae28c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.callout_items.field_date
+    - field.field.paragraph.callout_items.field_description
+    - field.field.paragraph.callout_items.field_image
+    - field.field.paragraph.callout_items.field_link
+    - field.field.paragraph.callout_items.field_tags
+    - field.field.paragraph.callout_items.field_title
+    - paragraphs.paragraphs_type.callout_items
+  module:
+    - datetime
+    - link
+    - text
+id: paragraph.callout_items.default
+targetEntityType: paragraph
+bundle: callout_items
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_description:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_tags:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
